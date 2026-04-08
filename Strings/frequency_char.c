@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[100];
-    fgets(str,sizeof(str),stdin);
+    scanf ( "%[^\n]s", str ) ; 
     int hash[1000]={0};
     strlwr(str);
     for(int i=0;i<strlen(str);i++){
