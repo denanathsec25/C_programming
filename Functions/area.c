@@ -10,4 +10,9 @@ int main(){
     scanf("%d %d",&l,&b);
     int area = areaofrect(l,b);
     printf("%d",area);
+    printf("\n");
+    int l1,b1;
+    scanf("%d %d",&l1,&b1);
+    int area1 = areaofrect(l1,b1);
+    printf("%d",area1);
 }
