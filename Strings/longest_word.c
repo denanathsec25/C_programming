@@ -23,7 +23,7 @@ int main(){
         }
     }
     for(int i= max_start;;i++){
-        if(str[i]==32){
+        if(str[i]==32 || str[i]=='\0'){
             break;
         }
         else{
