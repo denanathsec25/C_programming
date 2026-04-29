@@ -1,34 +1,30 @@
 #include<stdio.h>
 #include<string.h>
+
 int main(){
     char str[100];
-    int start=0;
-    int end=0;
+    int start = 0;
+    int end = 0;
 
-    fgets(str,sizeof(str),stdin);
+    fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\r\n")] = '\0';
-    int len=strlen(str);
-    
-    for(int i=0;i<len;i++){
 
+    for(int i = 0; i <= strlen(str); i++){
         if(str[i] == ' ' || str[i] == '\0'){
             end = i - 1;
 
+            // ✅ Inner loop is INSIDE the if block
             for(int j = end; j >= start; j--){
                 printf("%c", str[j]);
             }
 
             if(str[i] == ' '){
                 printf(" ");
+                start = i + 1;
             }
-
-            start = i + 1;
         }
     }
 
-    for(int j = len - 1; j >= start; j--){
-        printf("%c", str[j]);
-    }
-    
+    printf("\n");
     return 0;
 }
