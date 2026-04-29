@@ -13,7 +13,6 @@ int main(){
         if(str[i] == ' ' || str[i] == '\0'){
             end = i - 1;
 
-            // ✅ Inner loop is INSIDE the if block
             for(int j = end; j >= start; j--){
                 printf("%c", str[j]);
             }
