@@ -1,12 +1,12 @@
 #include<stdio.h>
-int n(int);
+int print(int);
 int main(){
     int num,dec;
     scanf("%d",&num);
-    n(num);
+    print(num);
     return 0;
 }
-int n(int m){
+int print(int m){
     for(int i=1;i<=m;i++){
         printf("%d\n",i);
     }
