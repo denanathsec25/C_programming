@@ -1,13 +1,13 @@
 #include<stdio.h>
-int oe(int);
+int sqr(int);
 int main(){
     int num,dec;
     scanf("%d",&num);
-    printf("%d",oe(num));
+    printf("%d",sqr(num));
     
 
     return 0;
 }
-int oe(int m){
+int sqr(int m){
     return m*m;
 }
