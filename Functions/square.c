@@ -1,7 +1,7 @@
 #include<stdio.h>
 int sqr(int);
 int main(){
-    int num,dec;
+    int num;
     scanf("%d",&num);
     printf("%d",sqr(num));
     
