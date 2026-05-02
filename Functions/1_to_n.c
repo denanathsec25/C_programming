@@ -1,7 +1,7 @@
 #include<stdio.h>
 int print(int);
 int main(){
-    int num,dec;
+    int num;
     scanf("%d",&num);
     print(num);
     return 0;
