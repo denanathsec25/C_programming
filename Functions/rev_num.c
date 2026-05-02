@@ -11,16 +11,15 @@ int main(){
 int rev(int n){
     int m=0,x=n;
     int count=0;
-    for(int i=0;x>0;i++){
+    for(;x>0;count++){
         x=x/10;
-        count++;
+        
     }
-   count = count-1;
-    for(int i=0;n>0;i++){
+   
+    for(int i=0;i<count;i++){
     
-        m=m+(n%10)*pow(10,count);
+        m=m*10+(n%10);
         n=n/10;
-        count--;
 
     }
     return m;
