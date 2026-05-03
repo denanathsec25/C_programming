@@ -19,17 +19,17 @@ int disp_lcm3(int num1,int num2,int num3){
             gcd=i;
         }
     }
-    int lcm12 = (num12/gcd);
+    int lcm2 = (num12/gcd);
 
 
-    int num123=lcm12*num3;
+    int num123=lcm2*num3;
     int gcd1;
-    int min1=lcm12;
-    if(lcm12>num3){
+    int min1=lcm2;
+    if(lcm2>num3){
         min1=num3;
     }
     for(int i=1;i<=min1;i++){
-        if(lcm12%i==0 && num3%i==0){
+        if(lcm2%i==0 && num3%i==0){
             gcd1=i;
         }
     }

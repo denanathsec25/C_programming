@@ -1,14 +1,13 @@
 #include<stdio.h>
-int disp_sum(int);
+int disp_sum();
 int main(){
-    int a,sum;
-    scanf("%d",&a);
-    sum=disp_sum(a);
+    int sum;
+    sum=disp_sum();
     printf("%d",sum);
 }
-int disp_sum(int m){
+int disp_sum(){
     int add=0;
-    for(int i=1;i<=m;i++){
+    for(int i=1;i<=5;i++){
         add=add+i;
 
     }
