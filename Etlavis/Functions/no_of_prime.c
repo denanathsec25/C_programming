@@ -17,7 +17,9 @@ int no_prime(int n){
         n=n/10;
 
         int flag =1;
-
+        if(num==1){
+            flag=0;
+        }
         for(int i=2;i<=sqrt(num);i++){
             if(num%i==0){
                 flag=0;
