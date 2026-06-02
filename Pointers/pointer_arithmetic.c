@@ -4,6 +4,10 @@ int main(){
 
     int *p;
     p=&arr[0];
+    //Addition
     p=p+3;
     printf("%d",*p);
+    //Subraction
+    p=p-3;
+    printf("\n%d",*p);
 }
