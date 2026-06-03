@@ -6,8 +6,10 @@ int main(){
     int max_len=0;
     int start=0;
     int max_start=0;
+
     fgets(str,sizeof(str),stdin);
     str[strcspn(str, "\n")] = '\0';
+    
     for(int i=0;i<strlen(str);i++){
         
         if(str[i]==32){
@@ -17,19 +19,17 @@ int main(){
         else{
             currentlen++;
         }
+
         if(currentlen>max_len){
             max_len = currentlen;
             max_start=start;
         }
     }
-    for(int i= max_start;;i++){
-        if(str[i]==32 || str[i]=='\0'){
-            break;
-        }
-        else{
-            printf("%c",str[i]);
-        }
+
+    for(int i= max_start;str[i] == ' '  && str[i]=='\0';i++){
+        printf("%c",str[i]);
     }
+
     printf("\n");
     printf("maximum length of a word in string is: %d",max_len);
 }
