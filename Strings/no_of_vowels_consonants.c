@@ -4,8 +4,8 @@ int main(){
      char str[100];
      fgets(str,sizeof(str),stdin);
      str[strcspn(str,"\n")]='\0';
-     
-     int vowels =0,consonants=0;
+
+     int vowels =0,consonants=0,digit=0;
      strlwr(str);
      for(int i=0;i<strlen(str);i++){
          if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'){
@@ -14,8 +14,11 @@ int main(){
          else if(str[i]>='a' && str[i]<='z'){
              consonants++;
          }
+         else if(str[i]>='0' && str[i]<='9'){
+            digit++;
+         }
      }
      printf("Number of vowels are %d\n",vowels);
-     printf("Number of consonants are %d",consonants);
-
+     printf("Number of consonants are %d\n",consonants);
+     printf("Number of digits are %d",digit);
 }
