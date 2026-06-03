@@ -3,12 +3,17 @@
 int main(){
     char str[100];
     fgets(str,sizeof(str),stdin);
+    str[strcspn(str, "\n")] = '\0';
+    
     int len = strlen(str);
     char rev[100];
     int flag =0;
+
     for(int i=0;i<len;i++){
-        rev[i]=str[len-i];
+        rev[i]=str[len-i-1];
     }
+    rev[len] = '\0';
+
     for(int i=0;i<len;i++){
         if(str[i]==rev[i]){
             continue;
@@ -19,6 +24,7 @@ int main(){
             break;
         }
     }
+
     if(flag==0){
         printf("Palindrome");
     }
