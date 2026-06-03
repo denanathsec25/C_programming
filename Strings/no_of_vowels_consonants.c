@@ -3,6 +3,8 @@
 int main(){
      char str[100];
      fgets(str,sizeof(str),stdin);
+     str[strcspn(str,"\n")]='\0';
+     
      int vowels =0,consonants=0;
      strlwr(str);
      for(int i=0;i<strlen(str);i++){
