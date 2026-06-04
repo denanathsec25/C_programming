@@ -10,8 +10,7 @@ int main(){
     }
 
     for(int i=0;i<n;i++){
-        if(i%2==1){
-            printf("%s\n",strrev(word[i]));
-        }
+    
+        printf("%d\n",strlen(word[i]));
     }
 }
