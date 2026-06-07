@@ -39,6 +39,12 @@ gcc program.c -o program
 
 This repository serves as a personal learning resource and practice collection for mastering C programming concepts and problem-solving techniques.
 
+## License
+
+This repository is open for educational purposes. Anyone is welcome to use, study, and modify the code for learning, academic, and non-commercial educational activities.
+
+© Denanath Shanmugasundaram
+
 ## Author
 
 **Denanath S**
@@ -53,11 +59,6 @@ Bannari Amman Institute of Technology
 
 🔗 GitHub: https://github.com/denanathsec25
 
-## License
-
-This repository is open for educational purposes. Anyone is welcome to use, study, and modify the code for learning, academic, and non-commercial educational activities.
-
-© Denanath Shanmugasundaram
 
 ## Support
 
