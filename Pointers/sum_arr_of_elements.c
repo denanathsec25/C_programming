@@ -4,7 +4,7 @@ int main(){
     int *p;
     int sum=0;
 
-    for(p=&a[0];p<=&a[4];p++){
+    for(p=&a;p<=&a[4];p++){
         sum += *p;
     }
 
