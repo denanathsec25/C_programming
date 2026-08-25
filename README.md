@@ -55,6 +55,8 @@ Bannari Amman Institute of Technology
 
 📧 Email: [denanathshanmugasundaram@gmail.com](mailto:denanathshanmugasundaram@gmail.com)
 
+🔗 Linkedin: https://linkedin/denanaths-/
+
 📱 Contact: +91 9894634656
 
 🔗 GitHub: https://github.com/denanathsec25
