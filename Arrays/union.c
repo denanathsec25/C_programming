@@ -16,7 +16,6 @@ int main(){
         if(hash[i]!=0 ){
             
                 printf("%d ",i);
-
             
             hash[i]=0;
             
